@@ -88,6 +88,12 @@ Services
 ## Services
 
 ### Cookie consent / CookieConsentService
+
+Angular wrapper for the NPM plugin, including a little tweak (yep, dirty) to also respect the 'do not track signal' users might set. In this case, cookies will always be declined. A better way would be to change the cookie banner text as well.
+
+*Todo:* Decouple dependency, optimise display.
+
+
 #### Requirements
 
 - global.d.ts
@@ -103,7 +109,9 @@ External
 ---
 
 ### Google Analytics / GoogleAnalyticsService
-#### Requirements
+
+Enables Google Analytics and defines a custom datalayer variable.
+Respects user opt-in from 'cookie consent'.
 
 #### Requirements
 
@@ -114,8 +122,9 @@ Services
 - CookieConsentService
 - GoogleAnalyticsEventsService
 
+External
+- [CookieConsent - Osano](https://www.npmjs.com/package/cookieconsent)
 
-#### Example
 
 ---
 
@@ -143,12 +152,14 @@ export class ExampleComponent {
 ---
 
 ### User color scheme / UserColorSchemeService
-#### Requirements
-#### Example
+
+Set user color scheme preference as CSS class. It will be stored and loaded from cookie as well. The information is useful for theming websites and applying 'light switches'.
+
+*Todo:* Move to LocalStorage instead, no need for cookies here.
 
 ---
 
 ### User track preference / UserTrackPreferenceService
-#### Requirements
-#### Example
+
+Retrieve 'do not track signal' from user settings. Used to disable tracking implementations in other services.
 

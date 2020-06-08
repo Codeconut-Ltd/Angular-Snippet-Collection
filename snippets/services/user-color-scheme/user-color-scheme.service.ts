@@ -2,13 +2,13 @@ import { environment } from '@env/environment';
 
 import { Injectable } from '@angular/core';
 
-// TODO - CHANGE 'PREFIX'
-
 @Injectable({
   providedIn: 'root'
 })
 export class UserColorSchemeService {
   private win: any;
+
+  // TODO - CHANGE 'PREFIX'
   private cookieName = 'PREFIX-user-color-scheme';
 
   /**
