@@ -1,4 +1,6 @@
-# Angular 9 snippets
+![Preview](/preview.jpg)
+
+# Angular snippets
 
 - [About](#about)
 - [Components](#components)
