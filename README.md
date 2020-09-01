@@ -1,4 +1,4 @@
-![Preview](/preview.jpg)
+![Preview](preview.png)
 
 # Angular snippets
 
