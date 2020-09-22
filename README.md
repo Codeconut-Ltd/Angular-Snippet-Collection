@@ -11,6 +11,8 @@
 
 ---
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Codeconut-Ltd_Angular-Snippets&metric=alert_status)](https://sonarcloud.io/dashboard?id=Codeconut-Ltd_Angular-Snippets)
+
 
 <br><br>
 
