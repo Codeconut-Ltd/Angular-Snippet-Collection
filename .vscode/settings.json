@@ -1,0 +1,25 @@
+{
+  "cSpell.language": "en-GB",
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext"
+  ],
+  "spellright.ignoreFiles": [
+    "**/.gitignore",
+    "**/.spellignore"
+  ],
+  "spellright.ignoreRegExps": [],
+  "spellright.languageContext": {
+    "strings": [
+      "en-GB"
+    ],
+    "comments": [
+      "en-GB"
+    ]
+  },
+  "spellright.language": [
+    "en",
+    "de"
+  ],
+}
