@@ -1,11 +1,10 @@
-![Preview](preview.png)
+![Angular Snippet Collection](teaser.png)
 
 # Angular snippets
 
 - [About](#about)
-- [Components](#components)
-- [Directives](#directives)
-- [Services](#services)
+- [Features](#features)
+- [Todo](#todo)
 
 <br>
 
@@ -23,7 +22,7 @@ Collection of small helper components, directives and services that might be pub
 *Tested with Angular 8-9*
 
 
-### Installation
+### Setup
 
 Manually copy and integrate these files in your own Angular setup.
 
@@ -36,13 +35,15 @@ Watch out for 'todo' comments where custom data is required.
 
 ---
 
-## Components
+## Features
 
-### AbstractComponent
+### Components
+
+#### AbstractComponent
 
 Use with view components. Applies `trackByFn` to improve list rendering performance.
 
-#### Example
+##### Example
 
 Component
 
@@ -66,18 +67,18 @@ View
 
 ---
 
-## Directives
+### Directives
 
-### GoogleAnalytics / TrackEventDirective
+#### GoogleAnalytics / TrackEventDirective
 
 Allow tracking custom events via Google Analytics.
 
-#### Requirements
+##### Requirements
 
 Services
 - GoogleAnalyticsEventsService
 
-#### Example
+##### Example
 
 ```html
 <a [appTrackEvent]="['UI module', 'Click', link.name, 1]">Link</a>
@@ -87,16 +88,16 @@ Services
 
 ---
 
-## Services
+### Services
 
-### Cookie consent / CookieConsentService
+#### Cookie consent / CookieConsentService
 
 Angular wrapper for the NPM plugin, including a little tweak (yep, dirty) to also respect the 'do not track signal' users might set. In this case, cookies will always be declined. A better way would be to change the cookie banner text as well.
 
 *Todo:* Decouple dependency, optimize display.
 
 
-#### Requirements
+##### Requirements
 
 - global.d.ts
 
@@ -106,16 +107,16 @@ Services
 External
 - [CookieConsent – Osano](https://www.npmjs.com/package/cookieconsent)
 
-#### Example
+##### Example
 
 ---
 
-### Google Analytics / GoogleAnalyticsService
+#### Google Analytics / GoogleAnalyticsService
 
 Enables Google Analytics and defines a custom datalayer variable.
 Respects user opt-in from 'cookie consent'.
 
-#### Requirements
+##### Requirements
 
 - index.html
 - global.d.ts
@@ -130,12 +131,12 @@ External
 
 ---
 
-### Google Analytics events / GoogleAnalyticsEventsService
+#### Google Analytics events / GoogleAnalyticsEventsService
 
 Allows tracking custom and navigation change events.
 Custom events can be tracked via `TrackEventDirective`.
 
-#### Example
+##### Example
 
 ```ts
 export class ExampleComponent {
@@ -150,10 +151,9 @@ export class ExampleComponent {
 }
 ```
 
-
 ---
 
-### User colour scheme / UserColorSchemeService
+#### User colour scheme / UserColorSchemeService
 
 Set user colour scheme preference as CSS class. It will be stored and loaded from cookie as well. The information is useful for theming websites and applying 'light switches'.
 
@@ -161,7 +161,14 @@ Set user colour scheme preference as CSS class. It will be stored and loaded fro
 
 ---
 
-### User track preference / UserTrackPreferenceService
+#### User track preference / UserTrackPreferenceService
 
 Retrieve 'do not track signal' from user settings. Used to disable tracking implementations in other services.
 
+<br><br>
+
+---
+
+## Todo
+
+- Integrate ESLint + TypeScript with Prettier

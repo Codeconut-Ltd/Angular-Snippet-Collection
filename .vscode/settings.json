@@ -1,25 +1,19 @@
 {
-  "cSpell.language": "en-GB",
-  "spellright.documentTypes": [
-    "markdown",
-    "latex",
-    "plaintext"
-  ],
-  "spellright.ignoreFiles": [
-    "**/.gitignore",
-    "**/.spellignore"
-  ],
-  "spellright.ignoreRegExps": [],
-  "spellright.languageContext": {
-    "strings": [
-      "en-GB"
-    ],
-    "comments": [
-      "en-GB"
-    ]
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.formatOnType": false,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": false,
+  "editor.useTabStops": false,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    ".*intrc": "json"
   },
-  "spellright.language": [
-    "en",
-    "de"
+  "htmlhint.documentSelector": [
+    "html"
   ],
+  "[markdown]": {
+    "editor.acceptSuggestionOnEnter": "off"
+  }
 }
