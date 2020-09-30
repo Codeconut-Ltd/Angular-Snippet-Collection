@@ -10,9 +10,6 @@
   "files.associations": {
     ".*intrc": "json"
   },
-  "htmlhint.documentSelector": [
-    "html"
-  ],
   "[markdown]": {
     "editor.acceptSuggestionOnEnter": "off"
   }
