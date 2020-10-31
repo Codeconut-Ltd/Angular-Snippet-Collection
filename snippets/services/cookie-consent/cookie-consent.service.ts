@@ -77,12 +77,18 @@ export class CookieConsentService {
     return hasConsent;
   }
 
+  /**
+   * By plugin definition, happens once the status cookie exists (NOT on the first run).
+   */
   private onInitialise(status: string) {
     const hasConsented = this.hasUserConsentStatus(status);
 
     this.status.next({ type: 'initialise', data: hasConsented });
   }
 
+  /**
+   * By plugin definition, happens on user interaction within the plugin banner.
+   */
   private onStatusChange(status: string, chosenBefore: string) {
     const hasConsented = this.hasUserConsentStatus(status);
 
