@@ -1,6 +1,6 @@
 ![Angular Snippet Collection](teaser.png)
 
-# Angular snippets
+# Angular Snippet Collection
 
 - [About](#about)
 - [Features](#features)
