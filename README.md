@@ -10,8 +10,6 @@
 
 ---
 
-<br><br>
-
 ## About
 
 Collection of small helper components, directives and services that might be published in a more convenient format via NPM in the future.
