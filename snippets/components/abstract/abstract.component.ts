@@ -13,6 +13,7 @@ export class AbstractComponent implements OnInit {
 
   /**
    * Template directive performance optimisation.
+   * Warning: Not best practice, just ok in this particular case (e.g. on resorting, indexes might change).
    */
   trackByFn( index: number, item: any ) {
     return index;
